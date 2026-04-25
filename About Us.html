@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrugStoc/About US</title>
+    <link rel="shortcut icon" href="images/freepik__talk__6932.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="About Us.css">
+
+
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+  <ul class="nav-links">
+
+    <li class="logo">
+      <a href="index.html">
+        <img src="images/freepik__talk__6932.png" alt="logo">
+        Drugstoc
+      </a>
+    </li>
+
+    <li class="dropdown">
+      <a href="#">Products</a>
+
+      <div class="content">
+        <a href="#">DrugStoc E-commerce</a>
+        <a href="#">Pillometer</a>
+        <a href="#">Dorra</a>
+        <a href="#">TheGoodPill</a>
+      </div>
+    </li>
+
+   
+    <li><a href="service.html">Services</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="About Us.html" class="active">About Us</a></li>
+
+    <li class="btn1"><a href="#">Shop on web</a></li>
+
+  </ul>
+</nav>
+
+
+<!-- HERO -->
+<div class="hero">
+  <img src="images/aboutimg4.png">
+
+  <div class="overlay-text">
+    <h1>Changing lives one click at a time</h1>
+    <p>Leading impactful health innovations across Africa, closing care gaps with intelligent technology</p>
+  </div>
+</div>
+<!-- WHO WE ARE -->
+<div class="who-section">
+
+  <div class="page-wrapper">
+
+    <div class="image-slider">
+      <img src="images/doctors-nurses-working-healthcare-facility-develop-treatment-protocols.jpg" class="slide active">
+      <img src="images/team-young-specialist-doctors-standing-corridor-hospital.jpg" class="slide">
+    </div>
+
+    <div class="box1-text">
+      <h1>Who We Are</h1>
+      <h3>The Largest Pharma Supply Chain Technology Company In Africa</h3>
+      <p>
+        We lead impactful health innovations across Africa,<br> 
+        closing care gaps with intelligent technology.<br>
+        Our anti-counterfeit supply chain and extensive <br>
+        distribution network unlock access to genuine, life- <br>
+        saving medications, ensuring positive health <br>
+        outcomes for millions of Africans who seek sound <br>
+        healthcare daily.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  const slides = document.querySelectorAll(".slide");
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  }, 3000); // change every 3 seconds
+</script>
+
+
+
+
+<div class="stats-wrapper">
+
+  <div class="stat-box">
+    <i class="fas fa-briefcase"></i>
+    <h1>30+</h1>
+    <p>Years of experience</p>
+  </div>
+
+  <div class="stat-box">
+    <i class="fas fa-file-alt"></i>
+    <h1>200+</h1>
+    <p>Completed projects</p>
+  </div>
+
+  <div class="stat-box">
+    <i class="fas fa-users"></i>
+    <h1>40+</h1>
+    <p>Team Members</p>
+  </div>
+
+  <div class="stat-box">
+    <i class="fas fa-trophy"></i>
+    <h1>80+</h1>
+    <p>Total Awards</p>
+  </div>
+
+</div>
+
+
+
+
+<div class="who-section2">
+
+  <div class="page-wrapper2">
+
+    <!-- TEXT -->
+    <div class="box2-text">
+      <h1>What We Do</h1>
+      <h3>The Largest Pharma Supply Chain Technology Company In Africa</h3>
+      <p>
+        We lead impactful health innovations across Africa,<br> 
+        closing care gaps with intelligent technology.<br>
+        Our anti-counterfeit supply chain and extensive <br>
+        distribution network unlock access to genuine, life- <br>
+        saving medications, ensuring positive health <br>
+        outcomes for millions of Africans who seek sound <br>
+        healthcare daily.
+      </p>
+    </div>
+
+
+    <div class="image-slider2">
+      <img src="images/african-american-general-practitioner-leading-healthcare-team-cabinet.jpg" class="slide1 active">
+      <img src="images/african-american-girl-pays-prescribed-pills-medicaments-pos-terminal.jpg" class="slide1">
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  const slides1 = document.querySelectorAll(".slide1");
+  let index1 = 0;
+
+  setInterval(() => {
+    slides1[index1].classList.remove("active");
+    index1 = (index1 + 1) % slides1.length;
+    slides1[index1].classList.add("active");
+  }, 3000); // change every 3 seconds
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-switch">
+
+ 
+  <div class="section1">
+    <div class="box3-text">
+      <h3>Our Mission</h3>
+      <p>
+        Empowering Healthcare Providers<br> 
+        Towards A Healthier Africa
+      </p>
+    </div>
+    <div class="img3">
+      <img src="images/healthcare.png">
+    </div>
+  </div>
+
+
+  <div class="section2">
+    <div class="box4-text">
+      <h3>Our Vision</h3>
+      <p>
+        To democratize access to life-saving <br>
+        medicines for the next 1 billion Africans.
+      </p>
+    </div>
+    <div class="img4">
+      <img src="images/freepik_assistant_1776894005242.png">
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT: LOGO + CONTACT -->
+    <div class="footer-col">
+      <img src="images/freepik__talk__6932.png" alt="company logo" class="logo">
+
+      <ul class="contact-info">
+        <li><i class="fas fa-map-marker-alt"></i> Ojota, opposite Chinese Village, Taiwo street</li>
+        <li><i class="fas fa-envelope"></i> info@drugstoc.com</li>
+        <li><i class="fas fa-phone"></i> +234 8023268806</li>
+      </ul>
+    </div>
+
+    <!-- MIDDLE: LINKS -->
+    <div class="footer-col">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="index.html">DrugStoc</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="About US.html">About US</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT: SOCIALS -->
+    <div class="footer-col">
+      <h3>Connect</h3>
+      <p>Follow us on our social platforms</p>
+
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    <p>© 2026 Drugstoc E-hub LTD. All rights reserved.</p>
+    <p>Designed by A. Deoba</p>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
