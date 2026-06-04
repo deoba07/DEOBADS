@@ -117,6 +117,61 @@ nav a.active {
 
 
 
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 3000;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: black;
+  margin: 4px 0;
+  display: block;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 350px;
+    width: 250px;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 20px;
+    gap: 20px;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .logo {
+    position: static;
+  }
+
+  .btn1 {
+    position: static;
+  }
+}
+
+
+
 
 
 
@@ -140,7 +195,7 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 100px;
+  gap: 40px;
   background-color:#3a7ec6; /* #4b66b2 */
 
   padding: 60px;
@@ -160,12 +215,6 @@ nav a.active {
 .hero-text p {
   line-height: 1.6;
 }
-
-
-
-
-
-
 
 
 
@@ -200,14 +249,30 @@ nav a.active {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
 
+  .hero-text {
+    text-align: center;
+  }
 
+  .hero-images {
+    width: 100%;
+  }
 
+  .top-images {
+    flex-direction: column;
+  }
 
-
-
-
-
+  .top-images img,
+  .bottom-image img {
+    width: 100%;
+  }
+}
 
 
 
@@ -258,9 +323,8 @@ nav a.active {
 
 .box3 {
   width: 90%;
-  height: 400px;
- margin-top: 50px;
- margin-bottom: 50px;
+  min-height: 400px;
+   margin: 50px auto;
   
 
 
@@ -275,8 +339,8 @@ nav a.active {
 
   display: flex;
   justify-content: space-between;
-  padding-left: 100px;
-  margin-left: 40px;
+  align-items: center;
+ 
   
   gap:50px;
 
@@ -291,9 +355,42 @@ nav a.active {
 }
 
 .box3 img {
-  width: 450px;   /* adjust size */
+  max-width: 450px;
+  width: 100%;
   height: auto;
 }
+
+
+@media screen and (max-width: 768px) {
+  .page-wrapper2 {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .box3 {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .box3 img {
+    max-width: 320px;
+  }
+
+  .img1 img {
+    max-width: 320px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .box1 {
@@ -327,6 +424,23 @@ nav a.active {
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .box1 {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .box1 > div:first-child {
+    width: 100%;
+  }
+
+  .gif-content img {
+    max-width: 320px;
+  }
 }
 
 

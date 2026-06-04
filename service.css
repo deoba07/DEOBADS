@@ -152,6 +152,61 @@ nav a.active {
 }
 
 
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 3000;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: black;
+  margin: 4px 0;
+  display: block;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 350px;
+    width: 250px;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 20px;
+    gap: 20px;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .logo {
+    position: static;
+  }
+
+  .btn1 {
+    position: static;
+  }
+}
+
+
+
 
 .box {
    max-width: 1100px;   /* instead of width */
@@ -227,11 +282,12 @@ nav a.active {
     height: auto;
     display: block;
     align-items: left;
+    border-radius: 20px;
 }
 
 .page-wrapper {
   display: flex;
-  flex-wrap: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
   padding: 50px;
@@ -241,7 +297,7 @@ nav a.active {
 
 .page-wrapper2 {
     display: flex;
-  flex-wrap: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
   padding: 50px;
@@ -263,6 +319,7 @@ nav a.active {
   width: 35%;
   max-height: 400px;
   margin-left: 40px;
+  
 
   padding: 30px;
   border:2px solid rgb(59, 56, 56);
@@ -292,6 +349,7 @@ nav a.active {
   width: 35%;
   max-height: 400px;
   margin-left: 40px;
+  
 
   padding: 30px;
   border-radius: 30px;
@@ -320,6 +378,7 @@ nav a.active {
   width: 35%;
   max-height: 400px;
   margin-left: 40px;
+  
 
   padding: 30px;
   border-radius: 30px;
@@ -350,6 +409,7 @@ display: flex;
   width: 35%;
   height: 100px;
   margin-left: 40px;
+  
 
   padding: 30px;
   border-radius: 30px;
@@ -372,6 +432,25 @@ display: flex;
               /* 🔥 THIS controls spacing cleanly */
   text-align: center;
    line-height: 1.2;
+}
+
+
+@media screen and (max-width: 768px) {
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 100%;
+    min-width: unset;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .page-wrapper,
+  .page-wrapper2 {
+    flex-direction: column;
+    padding: 15px;
+  }
 }
 
 
@@ -481,11 +560,12 @@ display: flex;
     height: auto;
     display: block;
     align-items: left;
+    border-radius: 20px;
 }
 
 .page-wrapper3 {
   display: flex;
-  flex-wrap: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
   padding: 50px;
@@ -495,7 +575,7 @@ display: flex;
 
 .page-wrapper4 {
     display: flex;
-  flex-wrap: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
   padding: 50px;
@@ -627,6 +707,28 @@ display: flex;
   text-align: center;
    line-height: 1.5;
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .box5,
+  .box6,
+  .box7,
+  .box8 {
+    width: 100%;
+    min-width: unset;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .page-wrapper3,
+  .page-wrapper4 {
+    flex-direction: column;
+    padding: 15px;
+  }
+}
+
+
 
 
 

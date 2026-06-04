@@ -15,7 +15,17 @@
 </head>
 <body>
      <nav>
-  <ul class="nav-links">
+
+      <!-- HAMBURGER ICON -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+    
+  <ul class="nav-links"    id="nav-links">
+
 
     <li class="logo">
       <a href="index.html">
@@ -42,6 +52,37 @@
     <li class="btn1"><a href="#">Shop on web</a></li>
 
   </ul>
+
+      <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  // toggle menu on hamburger click
+  menuToggle.addEventListener("click", (e) => {
+    e.stopPropagation(); // prevents immediate close
+    navLinks.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+  });
+
+  // close when clicking outside
+  document.addEventListener("click", (e) => {
+    const isClickInsideMenu = navLinks.contains(e.target);
+    const isClickOnToggle = menuToggle.contains(e.target);
+
+    if (!isClickInsideMenu && !isClickOnToggle) {
+      navLinks.classList.remove("active");
+      menuToggle.classList.remove("active");
+    }
+  });
+
+  // optional: close when clicking a link
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      menuToggle.classList.remove("active");
+    });
+  });
+</script>
 </nav>
  
 <div class="hero-section">
